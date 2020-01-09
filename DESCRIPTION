@@ -25,3 +25,5 @@ Repository/R-Forge/Revision: 5961
 Repository/R-Forge/DateTimeStamp: 2014-11-11 12:07:44
 Date/Publication: 2014-11-11 12:07:44
 Packaged: 2014-11-11 12:25:16 UTC; rforge
+Suggests: 
+    testthat (>= 2.1.0)
