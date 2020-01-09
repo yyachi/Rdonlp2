@@ -36,7 +36,8 @@ test_that("simple2", {
   ret <- donlp2(p, fn, par.u=par.u, par.l=par.l,nlin=list(nlcon),nlin.u=nlin.u,nlin.l=nlin.l,name="simple2")
   expect_match(ret$message,"KT-conditions satisfied, no further correction computed")
   # with gr
-  #attr(fn, "gr") <- dfn
-  #attr(nlcon, "gr") <- dnlcon
-  #ret <- donlp2(p, fn, par.u=par.u, par.l=par.l,nlin=list(nlcon),nlin.u=nlin.u,nlin.l=nlin.l,name="simple2")
+  attr(fn, "gr") <- dfn
+  attr(nlcon, "gr") <- dnlcon
+  ret <- donlp2(p, fn, par.u=par.u, par.l=par.l,nlin=list(nlcon),nlin.u=nlin.u,nlin.l=nlin.l,name="simple2")
+  expect_match(ret$message,"KT-conditions satisfied, no further correction computed")
 })
