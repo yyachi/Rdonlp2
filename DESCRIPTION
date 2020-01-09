@@ -1,5 +1,5 @@
 Package: Rdonlp2
-Version: 3002.10
+Version: 3002.10.0
 Date: 2007-03-18
 Title: An R extension library to use Peter Spelluci's DONLP2 from R.
 Description: 
