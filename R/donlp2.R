@@ -130,9 +130,9 @@ function(
                 return(as.double(eval(nlin[[fun.id]](p), env)))
             } else if (mode == 1){ # evaluate gradient values
                 if (fun.id == 0){
-                    return(as.double(eval(fn@gr(p), env)))
+                    return(as.double(eval(attr(fn,"gr")(p), env)))
                 }
-                return(as.double(eval((nlin[[fun.id]]@gr)(p), env)))
+                return(as.double(eval(attr(nlin[[fun.id]],"gr")(p), env)))
             } else {
                 stop("unknown evaluation mode: %d", mode)
             }

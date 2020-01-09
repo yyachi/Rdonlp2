@@ -1,6 +1,6 @@
 Package: Rdonlp2
-Version: 3002.10.0
-Date: 2007-03-18
+Version: 3002.10.1
+Date: 2020-01-09
 Title: An R extension library to use Peter Spelluci's DONLP2 from R.
 Description: 
    DONLP2 is a general purpose nonlinear constrained programming 
